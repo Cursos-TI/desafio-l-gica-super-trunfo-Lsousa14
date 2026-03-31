@@ -1,13 +1,8 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    
+  // Área para definição das variáveis para armazenar as propriedades das cidades
+
      char estado1[3], estado2[3];   
      char codigo1[10], codigo2[10];
      char cidade1[50], cidade2[50]; 
@@ -18,12 +13,15 @@ int main() {
      float densidadepopulacional1, densidadepopulacional2;
      float pibpercapita1, pibpercapita2;
      float superpoder1, superpoder2;
-    
-    // Cadastro das Cartas:
+
+
+
+  // Área para entrada de dados
+
      printf("digite os dados da carta 1, carta 2:\n\n");
     
      printf("estado (CE):\n");
-    scanf("  %2s" , &estado1);
+     scanf(" %2s", estado1);
 
      printf("codigo da carta 1:\n");
      scanf("%s" , codigo1);
@@ -48,7 +46,7 @@ int main() {
      printf("\ndigite os dados da carta 2:\n\n");
 
      printf("estado (BA):\n");
-     scanf("  %2s" , &estado2);
+     scanf(" %2s", estado2);
 
      printf("codigo da carta 2:\n");
      scanf("%s" , codigo2);
@@ -68,8 +66,7 @@ int main() {
      printf("numero de pontos turisticos:\n");
      scanf("%d", &pontosturisticos2);
 
-
-    //calculos
+     //calculos
 
      float densidade1 = populacao1 / area1;
       pibpercapita1 = (pib1*1000000000) / populacao1;
@@ -84,10 +81,11 @@ int main() {
      
 
 
-     // Área para exibição dos dados da cidade
+
+  // Área para exibição dos dados da cidade
 
      printf("\n--- Dados da carta 1 ---\n");
-     printf("Estado: %c\n", estado1);
+     printf("Estado: %s\n", estado1);
      printf("Codigo: %s\n", codigo1);
      printf("Cidade: %s\n", cidade1);
      printf("Populacao: %d\n", populacao1);
@@ -98,9 +96,11 @@ int main() {
      printf("pib per capita: %.2f reais\n", pibpercapita1);
     
 
+
+     
      
      printf("\n--- Dados da carta 2 ---\n");
-     printf("Estado: %c\n", estado2);
+     printf("Estado: %s\n", estado2);
      printf("Codigo: %s\n", codigo2);
      printf("Cidade: %s\n", cidade2);
      printf("Populacao: %d\n", populacao2);
@@ -122,7 +122,7 @@ int main() {
      printf("superpoder: carta %d venceu (%d)\n", (superpoder1>superpoder2)? 1 :2, (superpoder1<superpoder2));
 
 
-   // Comparação de cartas 
+   // Comparação de cartas (somente Área)
     printf("\nComparacao de cartas (Atributo: Area):\n");
     printf("Carta 1 - %s (%s): %.2f km²\n", cidade1, estado1, area1);
     printf("Carta 2 - %s (%s): %.2f km²\n", cidade2, estado2, area2);
@@ -140,8 +140,5 @@ int main() {
 
 
 
-
-    
-
-    return 0;
-}
+return 0;
+} 

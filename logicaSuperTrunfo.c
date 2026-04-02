@@ -68,11 +68,11 @@ int main() {
 
      //calculos
 
-      float densidadepopulacional1 = populacao1 / area1;
+      densidadepopulacional1 = (float) populacao1 / area1;
       pibpercapita1 = (pib1*1000000000) / populacao1;
 
 
-     float densidadepopulacional2 = populacao2 / area2;
+      densidadepopulacional2 = (float) populacao2 / area2;
       pibpercapita2 = (pib2* 1000000000) / populacao2;
 
      superpoder1 = (float)populacao1 + area1 +(float)pib1 + pontosturisticos1 + pibpercapita1 + (1.0f/ densidadepopulacional1);
